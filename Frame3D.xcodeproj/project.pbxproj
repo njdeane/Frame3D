@@ -13,6 +13,12 @@
 		A63F1009279E7C8800616A97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F0FF7279E7C8700616A97 /* ContentView.swift */; };
 		A63F100A279E7C8800616A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63F0FF8279E7C8800616A97 /* Assets.xcassets */; };
 		A63F100B279E7C8800616A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63F0FF8279E7C8800616A97 /* Assets.xcassets */; };
+		A63F1015279E7DA000616A97 /* FrameScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = A63F1014279E7DA000616A97 /* FrameScene.scn */; };
+		A63F1016279E7DA000616A97 /* FrameScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = A63F1014279E7DA000616A97 /* FrameScene.scn */; };
+		A63F1018279E7F2000616A97 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F1017279E7F2000616A97 /* Frame.swift */; };
+		A63F1019279E7F2000616A97 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F1017279E7F2000616A97 /* Frame.swift */; };
+		A63F101B279E7F7700616A97 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F101A279E7F7700616A97 /* ViewModel.swift */; };
+		A63F101C279E7F7700616A97 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F101A279E7F7700616A97 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,9 @@
 		A63F0FFD279E7C8800616A97 /* Frame3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frame3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63F1003279E7C8800616A97 /* Frame3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frame3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63F1005279E7C8800616A97 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		A63F1014279E7DA000616A97 /* FrameScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = FrameScene.scn; sourceTree = "<group>"; };
+		A63F1017279E7F2000616A97 /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
+		A63F101A279E7F7700616A97 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,9 @@
 			children = (
 				A63F0FF6279E7C8700616A97 /* Frame3DApp.swift */,
 				A63F0FF7279E7C8700616A97 /* ContentView.swift */,
+				A63F1017279E7F2000616A97 /* Frame.swift */,
+				A63F101A279E7F7700616A97 /* ViewModel.swift */,
+				A63F1014279E7DA000616A97 /* FrameScene.scn */,
 				A63F0FF8279E7C8800616A97 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -158,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A63F100A279E7C8800616A97 /* Assets.xcassets in Resources */,
+				A63F1015279E7DA000616A97 /* FrameScene.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A63F100B279E7C8800616A97 /* Assets.xcassets in Resources */,
+				A63F1016279E7DA000616A97 /* FrameScene.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +190,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63F1018279E7F2000616A97 /* Frame.swift in Sources */,
 				A63F1008279E7C8800616A97 /* ContentView.swift in Sources */,
+				A63F101B279E7F7700616A97 /* ViewModel.swift in Sources */,
 				A63F1006279E7C8800616A97 /* Frame3DApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +201,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63F1019279E7F2000616A97 /* Frame.swift in Sources */,
 				A63F1009279E7C8800616A97 /* ContentView.swift in Sources */,
+				A63F101C279E7F7700616A97 /* ViewModel.swift in Sources */,
 				A63F1007279E7C8800616A97 /* Frame3DApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

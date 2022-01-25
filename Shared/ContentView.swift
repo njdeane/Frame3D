@@ -14,30 +14,25 @@ struct ContentView: View {
     let scene = SCNScene(named: "FrameScene.scn")
     
     applyTextures(to: scene)
-
+    
     return scene
   }
   
   static func applyTextures(to scene: SCNScene?) {
     // 1
     for frame in Frame.allCases {
-      // 2
       let identifier = frame.rawValue
-      // 3
       let node = scene?.rootNode
         .childNode(withName: identifier, recursively: false)
-
-      // 4
-      let texture = UIImage(named: identifier)
-
-      // 5
       
+      let texture = UIImage(named: identifier)
       node?.geometry?.firstMaterial?.diffuse.contents = texture
+      
       let image = UIImage(named: "room")
       scene?.background.contents = image
     }
   }
-
+  
   
   var scene = makeScene()
   
@@ -50,7 +45,7 @@ struct ContentView: View {
         scene: scene,
         pointOfView: setUpCamera(),
         options: [.allowsCameraControl]
-      )
+      )      
       
       Text("")
         .padding(.top, 80)
